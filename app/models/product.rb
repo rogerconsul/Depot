@@ -8,4 +8,7 @@ class Product < ApplicationRecord
     with:    %r{\.(gif|jpg|png)\z}i,
     message: 'must be a URL for GIF, JPG or PNG image.'
   }
+  # validates :title, length: { in: 1..5}
 end
+
+# https://guides.rubyonrails.org/active_record_validations.html
